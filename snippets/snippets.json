@@ -1,0 +1,873 @@
+{
+  "Button": {
+    "prefix": "salt-button",
+    "body": [
+      "<Button",
+      "\tclassName=\"\"",
+      "\tdisabled={false}",
+      "\ttype=\"primary\"",
+      "\tsize=\"large\"",
+      "\tonClick={}",
+      ">",
+      "\t$1",
+      "</Button>"
+    ],
+    "description": "SaltUI Button"
+  },
+  "Icon": {
+    "prefix": "salt-icon",
+    "body": [
+      "<Icon",
+      "\tclassName=\"$1\"",
+      "\tname=\"$2\"",
+      "\tfill=\"#000\"",
+      "\twidth=\"32px\"",
+      "\theight=\"32px\"",
+      "\tonClick={}",
+      "/>"
+    ],
+    "description": "SaltUI Icon"
+  },
+  "Box": {
+    "prefix": "salt-box",
+    "body": [
+      "<Box",
+      "\tclassName=\"$2\"",
+      "\thAlign=\"\"",
+      "\tvAlign=\"\"",
+      "\tflex={}",
+      "\tonClick={}",
+      ">",
+      "\t$1",
+      "</Box>"
+    ],
+    "description": "SaltUI Box"
+  },
+  "VBox": {
+    "prefix": "salt-vbox",
+    "body": [
+      "<VBox",
+      "\tclassName=\"$2\"",
+      "\thAlign=\"\"",
+      "\tvAlign=\"\"",
+      "\tflex={}",
+      "\tonClick={}",
+      ">",
+      "\t$1",
+      "</VBox>"
+    ],
+    "description": "SaltUI VBox"
+  },
+  "HBox": {
+    "prefix": "salt-hbox",
+    "body": [
+      "<HBox",
+      "\tclassName=\"$2\"",
+      "\thAlign=\"\"",
+      "\tvAlign=\"\"",
+      "\tflex={}",
+      "\tonClick={}",
+      ">",
+      "\t$1",
+      "</HBox>"
+    ],
+    "description": "SaltUI HBox"
+  },
+  "Grid": {
+    "prefix": "salt-grid",
+    "body": [
+      "<Grid",
+      "\tclassName=\"$2\"",
+      "\tcol={4}",
+      "\tsqure={false}",
+      "\tnoLine={false}",
+      "\titemHAlign=\"center\"",
+      "\titemVAlign=\"center\"",
+      "\ttouchable={false}",
+      ">",
+      "\t$1",
+      "</Grid>"
+    ],
+    "description": "SaltUI Grid"
+  },
+  "Group": {
+    "prefix": "salt-group",
+    "body": [
+      "<Group",
+      "\tclassName=\"$2\"",
+      ">",
+      "\t$1",
+      "</Group>"
+    ],
+    "description": "SaltUI Group"
+  },
+  "Group Head": {
+    "prefix": "salt-group-head",
+    "body": [
+      "<Group.Head",
+      "\tclassName=\"$2\"",
+      ">",
+      "\t$1",
+      "</Group.Head>"
+    ],
+    "description": "SaltUI Group Head"
+  },
+  "Group List": {
+    "prefix": "salt-group-list",
+    "body": [
+      "<Group.List",
+      "\tclassName=\"$2\"",
+      "\tlineIndent={}",
+      "\titemIndent={}",
+      "\tborderTopNone={false}",
+      ">",
+      "\t$1",
+      "</Group.List>"
+    ],
+    "description": "SaltUI Group List"
+  },
+  "Crumb": {
+    "prefix": "salt-crumb",
+    "body": [
+      "<Crumb",
+      "\tclassName=\"$2\"",
+      "\tshowScroll={true}",
+      "\tonClick={}",
+      ">",
+      "\t$1",
+      "</Crumb>"
+    ],
+    "description": "SaltUI Crumb"
+  },
+  "Crumb Item": {
+    "prefix": "salt-crumb-item",
+    "body": [
+      "<Crumb.Item",
+      "\tdisabled={false}",
+      "\tonClick={}",
+      ">",
+      "\t$1",
+      "</Crumb.Item>"
+    ],
+    "description": "SaltUI Crumb Item"
+  },
+  "NavBar": {
+    "prefix": "salt-nav-bar",
+    "body": [
+      "<NavBar",
+      "\tclassName=\"$2\"",
+      "\ttitle=\"\"",
+      "\trightText=\"更多\"",
+      "\tisShow={true}",
+      "\tonLeftClick={}",
+      "\tonRightClick={}",
+      "\tcloseViewClick={}",
+      ">",
+      "\t$1",
+      "</NavBar>"
+    ],
+    "description": "SaltUI NavBar"
+  },
+  "TabBar": {
+    "prefix": "salt-tab-bar",
+    "body": [
+      "<TabBar",
+      "\tclassName=\"$2\"",
+      "\tactiveIndex={0}",
+      "\tonChange={}",
+      "\ttabBarStyle={}",
+      ">",
+      "\t$1",
+      "</TabBar>"
+    ],
+    "description": "SaltUI TabBar"
+  },
+  "TabBar Item": {
+    "prefix": "salt-tab-bar-item",
+    "body": [
+      "<TabBar.Item",
+      "\ttitle=\"\"",
+      "\ttitleStyle={}",
+      "\tactiveTitleStyle={}",
+      "\ticon=\"\"",
+      "\tactiveIcon=\"\"",
+      "\ticonStyle={}",
+      "\tactiveIconStyle={}",
+      "\tbadge=\"\"",
+      "\tbadgeStyle={}",
+      ">",
+      "\t$1",
+      "</TabBar.Item>"
+    ],
+    "description": "SaltUI TabBar Item"
+  },
+  "CalendarField": {
+    "prefix": "salt-calendar-field",
+    "body": [
+      "<CalendarField",
+      "\ttype=\"day\"",
+      "\tplaceholder={[\"开始日期\",\t\"结束日期\"]}",
+      "\tformatter=\"yyyy-MM-dd\"",
+      "\treadOnly={false}",
+      "\tshowWeek={true}",
+      "\tshowDateType={true}",
+      "/>"
+    ],
+    "description": "SaltUI CalendarField"
+  },
+  "CascadeSelectField": {
+    "prefix": "salt-cascade-select-field",
+    "body": [
+      "<CascadeSelectField",
+      "\toptions={[$1]}",
+      "\tvalue={[]}",
+      "\tformatter={(value) => value.map((v) => v.text).join('/')}",
+      "\tonChange={() => {}}",
+      "\tonSelect={() => {}}",
+      "\treadOnly={false}",
+      "\tplaceholder=\"\"",
+      "\tcolumns={[]}",
+      "/>"
+    ],
+    "description": "SaltUI CascadeSelectField"
+  },
+  "CheckboxField": {
+    "prefix": "salt-checkbox-field",
+    "body": [
+      "<CheckboxField",
+      "\tmode=\"slot\"",
+      "\treadOnly={false}",
+      "\tlabel=\"\"",
+      "\ttitleBreakStr=\"\"",
+      "\tplaceholder=\"\"",
+      "\tdata={[$1]}",
+      "\tonChange={() => {}}",
+      "\tmaskCloseable={true}",
+      "\tgroupListFlag={true}",
+      "\tgroupListArgument={{",
+      "\t\tlineIndent:\t0,",
+      "\t\titemIndent:\t15,",
+      "\t}}",
+      "/>"
+    ],
+    "description": "SaltUI CheckboxField"
+  },
+  "CheckboxField getData": {
+    "prefix": "salt-checkbox-field-getData",
+    "body": [
+      "CheckboxField.getData($1);"
+    ],
+    "description": "SaltUI CheckboxField.getData"
+  },
+  "CitySelectField": {
+    "prefix": "salt-city-select-field",
+    "body": [
+      "<CitySelectField",
+      "\tclassName=\"\"",
+      "\tlabel=\"省市区\"",
+      "\tplaceholder=\"请选择\"",
+      "\tlayout=\"h\"",
+      "\ttip=\"\"",
+      "\tselectorType=\"default\"",
+      "\tvalue={[]}",
+      "\tdistrictData={[]}",
+      "\trequired={false}",
+      "\treadOnly={false}",
+      "\tonSelect={() => {}}",
+      "\tonCancel={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI CitySelectField"
+  },
+  "DatetimeField": {
+    "prefix": "salt-datetime-field",
+    "body": [
+      "<DatetimeField",
+      "\tclassName=\"\"",
+      "\tlabel=\"省市区\"",
+      "\tplaceholder=\"请选择\"",
+      "\tconfirmText=\"完成\"",
+      "\tcancelText=\"取消\"",
+      "\treadOnly={false}",
+      "\tvalue={$1}",
+      "\tcolumns={[ \"年\", \"月\", \"日\", \"时\", \"分\", \"秒\" ]}",
+      "\tonSelect={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI DatetimeField"
+  },
+  "Field": {
+    "prefix": "salt-field",
+    "body": [
+      "<Field",
+      "\tclassName=\"\"",
+      "\tlabel=\"\"",
+      "\ttappable={false}",
+      "\tmultiLine={false}",
+      "\ticon={}",
+      "\tlayout=\"h\"",
+      "\trequired={false}",
+      "\ttip=\"\"",
+      "\textra=\"\"",
+      ">",
+      "\t$1",
+      "</Field>"
+    ],
+    "description": "SaltUI Field"
+  },
+  "PhotoField": {
+    "prefix": "salt-photo-field",
+    "body": [
+      "<PhotoField",
+      "\tclassName=\"\"",
+      "\tcolumns={3}",
+      "\tmultiple={false}",
+      "\tlayout=\"h\"",
+      "\tlabel=\"\"",
+      "\tmax={9}",
+      "\treadOnly={false}",
+      "\tphotoList={[$1]}",
+      "\tfill=\"#ccc\"",
+      "\tplaceholder=\"\"",
+      "\tcorpId=\"\"",
+      "\tonChange={() => {}}",
+      "\tonDelete={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI PhotoField"
+  },
+  "RadioField": {
+    "prefix": "salt-radio-field",
+    "body": [
+      "<RadioField",
+      "\tclassName=\"\"",
+      "\tdata={[$1]}",
+      "\tonChange={() => {}",
+      "\tgroupListFlag={true}",
+      "\tlabel=\"\"",
+      "\tgroupListArgument={{",
+      "\t\tlineIndent:\t0,",
+      "\t\titemIndent:\t18,",
+      "\t}}",
+      "/>"
+    ],
+    "description": "SaltUI RadioField"
+  },
+  "SelectField": {
+    "prefix": "salt-select-field",
+    "body": [
+      "<SelectField",
+      "\tclassName=\"\"",
+      "\tlabel=\"\"",
+      "\tplaceholder=\"\"",
+      "\tconfirmText=\"完成\"",
+      "\tcancelText=\"取消\"",
+      "\treadOnly={false}",
+      "\toptions={[$1]}",
+      "\tvalue={[$2]}",
+      "\tonSelect={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI SelectField"
+  },
+  "SwitchField": {
+    "prefix": "salt-switch-field",
+    "body": [
+      "<SwitchField",
+      "\tclassName=\"\"",
+      "\tlabel=\"\"",
+      "\ton={true}",
+      "\tonChange={() => {$1}}",
+      "/>"
+    ],
+    "description": "SaltUI SwitchField"
+  },
+  "TextField": {
+    "prefix": "salt-text-field",
+    "body": [
+      "<TextField",
+      "\tclassName=\"\"",
+      "\tvalue=\"$1\"",
+      "\tlabel=\"\"",
+      "\tplaceholder=\"\"",
+      "\tlayout=\"h\"",
+      "\treadOnly={false}",
+      "\tonChange={() => {}}",
+      "\tfilter={() => {}}",
+      "\tonFocus={() => {}}",
+      "\tonBlur={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI TextField"
+  },
+  "TextareaField": {
+    "prefix": "salt-textarea-field",
+    "body": [
+      "<TextareaField",
+      "\tclassName=\"\"",
+      "\tvalue=\"$1\"",
+      "\tminRows={1}",
+      "\tmaxRows={10}",
+      "\tplaceholder=\"\"",
+      "\treadOnly={false}",
+      "\tlineHeight=\"1.3\"",
+      "\tonChange={(newValue, e) => {}}",
+      "\tonFocus={(e) => {}}",
+      "\tonBlur={(e) => {}}",
+      "\tlayout=\"h\"",
+      "/>"
+    ],
+    "description": "SaltUI TextareaField"
+  },
+  "Avatar": {
+    "prefix": "salt-avatar",
+    "body": [
+      "<Avatar",
+      "\tsrc=\"$1\"",
+      "\tname=\"\"",
+      "\tsize=\"40px\"",
+      "\tfontSize=\"40px\"",
+      "\tcolors={[\"#ff8170\", \"#f5b153\", \"#56c8e8\", \"#79cc70\", \"#52bafa\", \"#9e9ee6\"]}",
+      "\tclassName=\"\"",
+      "\thashCode={() => {}}",
+      "\tisLong={false}",
+      "\tdefaultColor=\"\"",
+      "\tdefaultSrc=\"https://img.alicdn.com/tps/TB1.IgIKpXXXXbgXpXXXXXXXXXX-116-116.png\"",
+      "/>"
+    ],
+    "description": "SaltUI Avatar"
+  },
+  "Avatar.hashCode": {
+    "prefix": "salt-avatar.hasCode",
+    "body": [
+      "Avatar.hashCode($1, $2);"
+    ],
+    "description": "SaltUI Avatar.hasCode"
+  },
+  "Avatar.formatName": {
+    "prefix": "salt-avatar.formatName",
+    "body": [
+      "Avatar.formatName($1);"
+    ],
+    "description": "SaltUI Avatar.formatName"
+  },
+  "Calendar": {
+    "prefix": "salt-calendar",
+    "body": [
+      "<Calendar",
+      "\tclassName=\"\"",
+      "\tvisible={false}",
+      "\tvalue={$1}",
+      "\tlocale={\"zh-cn\"}",
+      "\tsingleMode={true}",
+      "\tshowHalfDay={false}",
+      "\tshowTopPanel={false}",
+      "\textraClass=\"\"",
+      "\ttopPanelTitle=\"\"",
+      "\tonCancel={() => {}}",
+      "\tonOk={(val) => {}}",
+      "\tonSelecting={(date, e) => {}}",
+      "\tonMaskClick={(e) => {}}",
+      "/>"
+    ],
+    "description": "SaltUI Calendar"
+  },
+  "Gallery": {
+    "prefix": "salt-gallery",
+    "body": [
+      "<Gallery",
+      "\timages={[$1]}",
+      "\tlazyLoad={true}",
+      "\tonGalleryClick={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI Gallery"
+  },
+  "List": {
+    "prefix": "salt-list",
+    "body": [
+      "<List",
+      "\tclassName=\"\"",
+      "\tlayout=\"left\"",
+      "\thasRightIcon={true}",
+      "\ticonName=\"angle-right\"",
+      "\ticonWidth={20}",
+      "\tisDelete={false}",
+      "\tdata={[{imgUrl:\"\",title:\"\",text:\"\",date:\"\"}]}",
+      "\tonClick={() => {}}",
+      "\tclickPhoto={() => {}}",
+      "\tonDelete={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI List"
+  },
+  "Mask": {
+    "prefix": "salt-list",
+    "body": [
+      "<Mask",
+      "\tclassName=\"\"",
+      "\tcloseable={true}",
+      "\topacity={0.6}",
+      "\tonWillHide={() => {}}",
+      "\tonDidHide={() => {}}",
+      "\tvisiable={false}",
+      "\tzIndex={1000}",
+      "/>"
+    ],
+    "description": "SaltUI Mask"
+  },
+  "Rate": {
+    "prefix": "salt-rate",
+    "body": [
+      "<Rate",
+      "\tclassName=\"\"",
+      "\ttotalScore={5}",
+      "\theight={30}",
+      "\tgap={10}",
+      "\tscore={0}",
+      "\tonChange={() => {}}",
+      "/>"
+    ],
+    "description": "SaltUI Rate"
+  },
+  "ScrollList": {
+    "prefix": "salt-scroll-list",
+    "body": [
+      "<ScrollList",
+      "\tscrollLoad={true}", // 是否支持滚动,来自设计器配置
+      "\tdataGetted={false}",
+      "\tdata={[]}",
+      "\trefreshing={false}",
+      "\tprefixCls=\"t-scroll-list\"",
+      "\tpullLoadTip=\"下拉显示更多\"",
+      "\tloadDataTip=\"释放加载数据\"",
+      "\tonRefresh={null}",
+      "\tloading={false}", // 触底加载
+      "\tloadingTip=\"加载中...\"",
+      "\tonLoad={null}",
+      "\tbeforeFetch=data => data",
+      "\tprocessData=data => data",
+      "\tcurrentPageKey=\"currentPage\"",
+      "\tnoMore={false}", // 没有更多内容提示
+      "\tnoMoreDataTip=\"没有更多了\"",
+      "\thasError={false}",
+      "\terrorTip=\"获取数据失败\"",
+      "\tnoDataTip=\"暂无数据\"",
+      "\tnoDataImage=\"https://img.alicdn.com/tps/TB1K6mHNpXXXXXiXpXXXXXXXXXX-1000-1000.svg\"",
+      "\tfetchDataOnOpen={true}",
+      ">",
+      "\t",
+      "</ScrollList>"
+    ],
+    "description": "SaltUI ScrollList"
+  },
+  "ScrollList Item": {
+    "prefix": "salt-scroll-list-item",
+    "body": [
+      "<Item",
+      "\tprefixCls=\"t-scroll-list-item\"",
+      "\tdesMaxLine={2}",
+      "/>"
+    ],
+    "description": "SaltUI ScrollList Item"
+  },
+  "Scroller": {
+    "prefix": "salt-scroller",
+    "body": [
+      "<Scroller",
+      "\tclassName=\"\"",
+      "\tautoRefresh={true}",
+      "\tdisablePointer={true}",
+      "\tminWidth=\"100%\"",
+      "\tclick={/chrome/i.test(navigator.userAgent)}",
+      ">",
+      "\t",
+      "</Scroller>"
+    ],
+    "description": "SaltUI Scroller"
+  },
+  "SearchBar": {
+    "prefix": "salt-search-bar",
+    "body": [
+      "<SearchBar",
+      "\ticonWidth={20}",
+      "\ticonHeight={20}",
+      "\ticonColor=\"#bcbcbc\"",
+      "\tlocale=\"zh_CN\"",
+      "\tvalue=\"\"",
+      "\tplaceholder={",
+      "\t\tzh_CN:\t\"搜索\"",
+      "\t\ten_US:\t\"Search\"",
+      "\t}",
+      "\thasHistory={true}",
+      "\tinstantSearch={true}",
+      "\tsearchDelay={350}",
+      "\tdisabled={false}",
+      "\tonChange={() => {}}",
+      "\tonSearch={() => {}}",
+      "\tonEnter={() => {}}",
+      "\tonExit={() => {}}",
+      "\tisActive={false}",
+      "/>"
+    ],
+    "description": "SaltUI SearchBar"
+  },
+  "Slide": {
+    "prefix": "salt-slide",
+    "body": [
+      "<Slide",
+      "\tclassName=\"\"",
+      "\theight={null}",
+      "\tactive={0}",
+      "\tauto={false}",
+      "\tloop={true}",
+      "\tshowNav={false}",
+      "\tonMount={() => {}}",
+      "\tonSlideEnd={() => {}}",
+      "\tonSlideClick={() => {}}",
+      "\tshowTitle={false}",
+      "\tautoSlideTime={4000}",
+      ">",
+      "\t",
+      "</Slide>"
+    ],
+    "description": "SaltUI Slide"
+  },
+  "Slide Item": {
+    "prefix": "salt-slide-item",
+    "body": [
+      "<Slide.Item",
+      "\tclassName=\"\"",
+      "\tstyle={$1}",
+      ">",
+      "\t",
+      "</Slide.Item>"
+    ],
+    "description": "SaltUI Slide.Item"
+  },
+  "Slide Nav": {
+    "prefix": "salt-slide-nav",
+    "body": [
+      "<Slide.Nav",
+      "\tnum={0}",
+      "\tactive={0}",
+      "\tposition=\"CENTER\"",
+      ">",
+      "\t",
+      "</Slide.Nav>"
+    ],
+    "description": "SaltUI Slide.Nav"
+  },
+  "Slot": {
+    "prefix": "salt-slot",
+    "body": [
+      "<Slot",
+      "\ttitle=\"\"",
+      "\tvalue={[]}",
+      "\tmaskCloseable={true}",
+      "\tdata={[]}",
+      "\tclassName=\"\"",
+      "\tconfirmText=\"完成\"",
+      "\tcancelText=\"取消\"",
+      "\tonConfirm={() => {}}",
+      "\tonCancel={() => {}}",
+      "\tonChange={() => {}}",
+      "\tscrollMod=\"reset\"",
+      "\tcolumns={[]}",
+      "/>"
+    ],
+    "description": "SaltUI Slot"
+  },
+  "Slot.show": {
+    "prefix": "salt-slot-show",
+    "body": [
+      "Slot.show($1);"
+    ],
+    "description": "SaltUI Slot.show"
+  },
+  "Slot.hide": {
+    "prefix": "salt-slot-hide",
+    "body": [
+      "Slot.hide($1);"
+    ],
+    "description": "SaltUI Slot.hide"
+  },
+  "Slot.formatDataValue": {
+    "prefix": "salt-slot-formatDataValue",
+    "body": [
+      "Slot.formatDataValue($1, $2);"
+    ],
+    "description": "SaltUI Slot.formatDataValue"
+  },
+  "Slot.formatColumnValue": {
+    "prefix": "salt-slot-formatColumnValue",
+    "body": [
+      "Slot.formatColumnValue($1, $2);"
+    ],
+    "description": "SaltUI Slot.formatColumnValue"
+  },
+  "Switch": {
+    "prefix": "salt-switch",
+    "body": [
+      "<Switch",
+      "\tclassName=\"\"",
+      "\ton={true}",
+      "\tonChange={() => {$1}}",
+      "\treadOnly={false}",
+      ">",
+      "</Switch>"
+    ],  
+    "description": "SaltUI Switch"
+  },
+  "Tab": {
+    "prefix": "salt-tab",
+    "body": [
+      "<Tab",
+      "\tprefixCls=\"t\"",
+      "\tactiveKey={0}\"",
+      "\tanimated={true}",
+      "\tswipeable={true}",
+      "\tshowExpandAll={true}",
+      "\tfixedTop={false}",
+      "\tfixedBottom={false}",
+      "\ttabBarPosition=\"top\"",
+      "\thammerOptions={{}}",
+      "\ttabBarhammerOptions={{}}",
+      "\tpageSize={5}",
+      "\tspeed={8}",
+      "\tonChange={() => {$1}}",
+      "\tonTabClick={() => {}}",
+      ">",
+      "</Tab>"
+    ],  
+    "description": "SaltUI Tab"
+  },
+  "Tab Item": {
+    "prefix": "salt-tab-item",
+    "body": [
+      "<Tab.Item",
+      "\ttitle=\"t\"",
+      "\tdata={}\"",
+      ">",
+      "</Tab.Item>"
+    ],  
+    "description": "SaltUI Tab.Item"
+  },
+  "Dialog": {
+    "prefix": "salt-dialog",
+    "body": [
+      "<Dialog",
+      "\ttransparentMode={false}",
+      "\tclassName=\"\"",
+      "\ttitle=\"\"",
+      "\tcontent=\"\"",
+      "\tonConfirm={() => {}}",
+      "\tonCancel={() => {}}",
+      "\ttype=\"alert\"",
+      "\tshow={true}",
+      "\tlocale=\"zh_CN\"",
+      ">",
+      "\t$1",
+      "</Dialog>"
+    ],  
+    "description": "SaltUI Dialog"
+  },
+  "Dialog.alert": {
+    "prefix": "salt-dialog-alert",
+    "body": [
+      "Dialog.alert({",
+      "\ttitle: $1",
+      "\tcontent: $2",
+      "\tonConfirm() {",
+      "\t\t$3",
+      "\t}",
+      "});"
+    ],  
+    "description": "SaltUI Dialog.alert"
+  },
+  "Dialog.confirm": {
+    "prefix": "salt-dialog-confirm",
+    "body": [
+      "Dialog.confirm({",
+      "\ttitle: $1",
+      "\tcontent: $2",
+      "\tonConfirm() {",
+      "\t\t$3",
+      "\t}",
+      "\tonCancel() {",
+      "\t\t$4",
+      "\t}",
+      "});"
+    ],  
+    "description": "SaltUI Dialog.confirm"
+  },
+  "Dialog.hide": {
+    "prefix": "salt-dialog-hide",
+    "body": [
+      "Dialog.hide();"
+    ],  
+    "description": "SaltUI Dialog.hide"
+  },
+  "Layer": {
+    "prefix": "salt-layer",
+    "body": [
+      "<Layer",
+      "\tonClick={() => {$2}}",
+      "\tonHide={() => {$3}}",
+      "\tzIndex={}",
+      "\thasMask={true}",
+      "\tvisible={false}",
+      "\trenderToBody={true}",
+      ">",
+      "\t$1",
+      "</Layer>"
+    ],  
+    "description": "SaltUI Layer"
+  },
+  "Note": {
+    "prefix": "salt-note",
+    "body": [
+      "<Note",
+      "\ttype=\"message\"",
+      "\tclosable={false}",
+      "\tcloseText=\"\"",
+      "\tmessage=\"\"",
+      "\tonClose={() => {}}",
+      "/>"
+    ],  
+    "description": "SaltUI Note"
+  },
+  "Note.doClose": {
+    "prefix": "salt-note-do-lose",
+    "body": [
+      "Note.doClose();"
+    ],  
+    "description": "SaltUI Note.doClose"
+  },
+  "Toast.show": {
+    "prefix": "salt-toast-show",
+    "body": [
+      "Toast.show({",
+      "\ttype=\"\"",
+      "\tcontent=\"\"",
+      "\tautoHide={true}",
+      "\ticon=\"\"",
+      "\tduration={1500}",
+      "\tonDidHide={() => {}}",
+      "\twidth=\"auto\"",
+      "\theight=\"auto\"",
+      "})"
+    ],  
+    "description": "SaltUI Toast.show"
+  },
+  "Toast.hide": {
+    "prefix": "salt-toast-hide",
+    "body": [
+      "Toast.hide({",
+      "\tonDidHide={() => {}}",
+      "\thasMask={false}",
+      "})"
+    ],  
+    "description": "SaltUI Toast.hide"
+  }
+}
