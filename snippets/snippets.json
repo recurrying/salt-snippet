@@ -438,14 +438,14 @@
     "description": "SaltUI Avatar"
   },
   "Avatar.hashCode": {
-    "prefix": "salt-avatar.hasCode",
+    "prefix": "salt-avatar-hasCode",
     "body": [
       "Avatar.hashCode($1, $2);"
     ],
     "description": "SaltUI Avatar.hasCode"
   },
   "Avatar.formatName": {
-    "prefix": "salt-avatar.formatName",
+    "prefix": "salt-avatar-formatName",
     "body": [
       "Avatar.formatName($1);"
     ],
@@ -502,7 +502,7 @@
     "description": "SaltUI List"
   },
   "Mask": {
-    "prefix": "salt-list",
+    "prefix": "salt-mask",
     "body": [
       "<Mask",
       "\tclassName=\"\"",

@@ -8,7 +8,7 @@
         "url": "https://github.com/recore/salt-snippet"
     },
     "icon": "images/saltUI.png",
-    "publisher": "saltUI",
+    "publisher": "salt-snippet",
     "keywords": [
         "vscode",
         "snippets",
